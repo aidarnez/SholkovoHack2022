@@ -1,0 +1,109 @@
+:root {
+  --orange: #ffc690;
+  --purple: #bebdff;
+  --light-purple: #d3d2ff;
+  --lighter-purple: #f2efff;
+  --grey: #d9d9d9;
+  --light-grey: #fff7e9;
+}
+
+body {
+  height: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  border: 0;
+  height: 52px;
+}
+
+header {
+  background-color: var(--orange);
+  height: 12vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#upload {
+  margin-right: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  height: 88vh;
+  width: 100%;
+}
+
+.left-sidebar {
+  background-color: var(--purple);
+  width: 7%;
+}
+
+.mainbar {
+  width: 93%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.video {
+  height: 60%;
+  background-color: var(--light-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.window {
+  background-color: var(--grey);
+  width: 800px;
+  height: 450px;
+}
+
+.bar {
+  height: 30%;
+  background-color: var(--lighter-purple);
+}
+
+.bar form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.bar form label {
+  margin-top: 15px;
+}
+
+.panel {
+  height: 10%;
+  background-color: var(--light-purple);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#cut {
+  margin-right: 10px;
+}
+
+#cursor {
+  margin-right: 10px;
+}
+#progress {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}

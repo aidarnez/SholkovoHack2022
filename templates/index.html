@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>index</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="static/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="static/img/logo.png" alt="edgeцентер" />
+      <a id="upload" href="static/video.mp4" download="video.mp4"><img src="static/img/upload.png"></a>
+    </header>
+    <main>
+      <div class="left-sidebar"></div>
+      <div class="mainbar">
+        <div class="video">
+          <div class="window">
+            <video width="800" height="450" poster="" id="video-player">
+      <source src="static/video.mp4" type="video/mp4">
+    </video>
+          </div>
+      </div>
+        <div class="bar">
+          <form id="cuttingtime" action="/cut" method="post">
+            <label for="starttime">Start</label>
+            <input id="starttime" name="starttime"/>
+            <label for="finishtime">End</label>
+            <input id="finishtime" name="finishtime"/>
+          </form>
+          <div>
+            <progress id="progress" value="0" max="100" style="width:800px"></progress>
+          </div>
+        </div>
+      <div class="panel">
+        <button id="cursor"><img src="static/img/cursor.png"/></button>
+        <button id="cut" type="submit" form="cuttingtime" value="Update"><img src="static/img/cut.png"/></button>
+        <button id="play"><img src="static/img/play.png"/></button>
+      </div>
+    </div>
+    </main>
+  <script src="static/js.js"></script>
+  </body>
+</html>
